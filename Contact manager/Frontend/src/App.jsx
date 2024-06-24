@@ -16,7 +16,7 @@ function App() {
     <>
       <BrowserRouter>
       <Routes>
-          <Route path='/' element={mail?<Home/>:<Login/>}/>
+          <Route path='/' element={<Home/>}/>
           <Route path='/login' element={mail?<Home/>:<Login/>}/>
           <Route path='/signup' element={mail?<Home/>:<Signup/>}/>
       </Routes>
@@ -26,3 +26,5 @@ function App() {
 }
 
 export default App
+
+// element={mail?<Home/>:<Login/>}
